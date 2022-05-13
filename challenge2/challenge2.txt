@@ -1,0 +1,15 @@
+Get the top-level metadata items
+
+TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
+&& curl -H "X-aws-ec2-metadata-token: $TOKEN" -v http://169.254.169.254/latest/meta-data/    
+
+Use the /dynamic/instance-identity/document URL if you also need to query more than just your instance ID.
+
+wget -q -O - http://169.254.169.254/latest/dynamic/instance-identity/document
+
+This will give JSON data
+
+
+For Azure ,Get a Virtual Machine.
+
+GET https://management.azure.com/subscriptions/{subscription-id}/resourceGroups/myResourceGroup/providers/Microsoft.Compute/virtualMachines/myVM?api-version=2021-11-01

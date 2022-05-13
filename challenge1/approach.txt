@@ -1,0 +1,10 @@
+Please see the attached image "challenge-1.PNG" for reference of the 3-tier architecture.  
+We can use Terraform to create the resources in the given image.
+
+- Virtual Network
+- 3 subnets
+- Availability sets (2 VMs each for web,app and db)
+- External Load balancer (Eg. Application Gateway)
+- Internal Load balancer
+- Resource groups
+- NSG's

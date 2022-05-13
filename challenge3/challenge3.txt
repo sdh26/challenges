@@ -1,0 +1,4 @@
+Based on reading online and the reference document , this can be achived by making use of elixir get_in function and we can use javascript code for this purpose.
+Although I couldn't test this.
+
+
